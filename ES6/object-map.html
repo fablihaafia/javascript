@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const students = [
+        {
+          id: 1,
+          name: "John",
+          address: "dhaka",
+        },
+        {
+          id: 2,
+          name: "moina",
+          address: "Faridpur",
+        },
+        {
+          id: 3,
+          name: "Doe",
+          address: "dhaka",
+        },
+      ];
+
+const info = students.map(student =>student.name)
+   console.log(`name`,info)
+
+   const ids = students.map(student => student.id);
+   console.log(`id=`,ids);
+
+   
+   const bigger = students.filter(student => student.id >1);
+   console.log(`bigger=`,bigger);
+
+   const biggerOne = students.find(student => student.id>1);
+   console.log(`biggerOne=`,biggerOne);
+
+    </script>
+
+   
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<script>
+    function recursiveFebonacci(n){
+
+        if(n== 0){
+            return 0;
+        }
+        if(n==1){
+            return 1;
+        }
+        else{
+         return recursiveFebonacci(n-1) + recursiveFebonacci(n-2);
+        }
+    }
+
+    var result = recursiveFebonacci(10);
+    console.log(result);
+</script>

@@ -1,0 +1,16 @@
+<script>
+    var marks = [20,60,10,78,190,25,66,30];
+     var max = marks[0];
+    for(var i = 0 ; i < marks.length ; i++){
+        var element = marks[i];
+    if(element > max){
+       max = element;
+    }
+
+    }
+    console.log(max);
+    // OR
+    var maxValue = Math.min(...[20,60,10,78,190,25,66,30]);
+    console.log(maxValue);
+   
+</script>

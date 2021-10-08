@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var nums = [5, 10, 15, 13, 6, 20, 3];
+        // for (i = 0; i < nums.length; i++) {
+        //     var result = nums[i];
+        //     // console.log(result);
+        //     if (result % 2 == 0) {
+        //         console.log(result, ':even number');
+        //     } else {
+        //         console.log(result, ':odd number');
+        //         console.log(result * 2, ': after multiply odd number');
+        //     }
+
+        // }
+        // var friends_age = [18, 20, 24, 26, 27, 29, 30];
+        // for (i = 0; i < friends_age.length; i++) {
+        //     var total_age = friends_age[i];
+        //     if (total_age % 2 == 0) {
+        //         console.log(total_age, ':your age even');
+        //     } else {
+        //         console.log(total_age, ':your age is odd number');
+        //         console.log(total_age * 2, ': after multiply age odd number');
+        //     }
+        // }
+        // reuseable function
+        function evenfyAll(number) {
+            for (i = 0; i < number.length; i++) {
+                var total_age = number[i];
+
+                if (total_age % 2 == 0) {
+                    console.log(total_age, ':your age even');
+                } else {
+                    console.log(total_age, ':your age is odd number');
+                    console.log(total_age * 2, ': after multiply age odd number');
+                }
+            }
+
+        }
+        var friends_age = [18, 20, 24, 26, 27, 29, 30];
+        var rest = evenfyAll(friends_age);
+        console.log(rest);
+
+        var nums = [5, 10, 15, 13, 6, 20, 3];
+        var totalNUmber = evenfyAll(nums);
+        console.log(totalNUmber);
+    </script>
+
+</body>
+
+</html>

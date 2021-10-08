@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function callBack(name, age, task) {
+            console.log('your name is', name);
+            console.log('your age is', age);
+            task();
+        }
+
+        function Office() {
+            console.log('go to office');
+        }
+
+        function college() {
+            console.log('go to college');
+        }
+        callBack('afia', 23, Office);
+        callBack('tasfia', 18, college);
+    </script>
+</body>
+
+</html>

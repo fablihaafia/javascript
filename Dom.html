@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Title for paragraph</h1>
+    <h1>2nd</h1>
+    <button onclick="changeColor()">Click me</button>
+    <p>this is a paragraph-1</p>
+    <p>this is a paragraph-2</p>
+    <p>this is a paragraph-3</p>
+    <p>this is a paragraph-4</p>
+
+    <button onclick=" changeStyle() ">Click here</button>
+    <div class="element">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="element">
+        Lorem ipsum dolor sit amet 7.
+    </div>
+
+
+    <button onclick="changeBg()">Click</button>
+
+
+
+    <script>
+        function changeColor() {
+
+            var x = document.getElementsByTagName("h1");
+            console.log(x);
+            x[1].style.color = "blue";
+
+        }
+
+
+        function changeStyle() {
+            var pera = document.getElementsByTagName("p");
+            pera[0].style.color = "red ";
+            pera[1].style.color = "green ";
+            for (var i = 0; i < pera.length; i++) {
+                pera[i].style.fontSize = "30px ";
+
+            }
+
+        }
+
+        function changeBg() {
+            var y = document.querySelectorAll(".element");
+            y[1].style.backgroundColor = "pink";
+            var a = y[0].innerHTML;
+            // for (var i = 0; i < y.length; i++) {
+            //     y[i].style.backgroundColor = "pink";
+
+            // }
+
+            console.log(a);
+        }
+    </script>
+</body>
+
+
+</html>

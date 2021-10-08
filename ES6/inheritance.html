@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class Parent{
+            constructor(fatherName){
+                this.fatherName = "abu mia";
+            }
+        }
+        class Child extends Parent{
+            constructor(name){
+                super();
+                this.name = name ;
+            }
+// Method
+            getFullName(){
+                return this.name + " " + this.fatherName;
+            }
+        }
+        const baby = new Child("afia");
+        const baba = new Child("tas");
+        console.log(`baby`, baby.getFullName());
+        console.log(`baba`, baba);
+    </script>
+</body>
+</html>

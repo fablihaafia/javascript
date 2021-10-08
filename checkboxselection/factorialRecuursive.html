@@ -1,0 +1,35 @@
+<script>
+
+function factorialNumber(n){
+var factorial = 1;
+for( i = 10; i>=n ; i--) {
+ factorial = factorial * i;
+ console.log(i,factorial);
+  } 
+
+  return factorial;
+}
+var factorial10 = factorialNumber(4) ;
+console.log(factorial10);
+
+// recursive function
+
+function recursiveFactorial(n){
+  if(n == 0){
+    return 1;
+  }
+  else{
+    return n * recursiveFactorial(n-1)
+  }
+ 
+}
+
+var fact = recursiveFactorial(10);
+console.log(fact);
+
+
+
+
+
+
+</script>

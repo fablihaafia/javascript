@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2 class="name"> hlw</h2>
+    <button onclick="changeColor()">Click</button>
+    <button onclick="changeColoragain()">Click again</button>
+
+    <h1 class="hi">hi</h1>
+    <button onclick="changeColora()">Click a</button>
+
+    <script>
+        var a = "hello world";
+        var firstname = "fabliha";
+
+        const name = document.querySelector("h1");
+
+        function changeColor(color) {
+            name.style.color = "red";
+        }
+
+        function changeColoragain(color) {
+            name.style.color = "black";
+        }
+
+        function changeColora(color) {
+            var b = document.getElementsByClassName("hi");
+            b[0].style.color = "orange";
+            console.log(b);
+        }
+    </script>
+</body>
+
+</html>

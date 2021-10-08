@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <p>hi cccc</p>
+    <script>
+      // for (i=0;i<=100;i++){
+      //   if(i%5==0){
+      //     console.log("divide with 5=" +i);
+      //     if(i%10==0){
+      //       console.log("divide with 10 =" +i);
+      //     }
+      //   }
+      //   else{
+      //     // console.log("false");
+      //   }
+      // }
+      function getEvenNum() {
+        for (i = 0; i <= 20; i++) {
+          if (i % 2 == 0) {
+            console.log("even");
+          } else {
+            console.log("odd");
+          }
+        }
+      }
+
+      // function findOddEven(){
+      //                 //get the input value
+      //                 var num = document.getElementById('num').value;
+
+      //                 //if the remainder value is 0 then it is an even number
+      //                 //we are using % modulus operator to get the remainder value
+      //                 if ( num % 2 == 0) {
+      //                     document.getElementById('result').innerHTML = num + ' is an Even number';
+      //                 }else{
+      //                     document.getElementById('result').innerHTML = num + ' is an Odd number';
+      //                 }
+      //             }
+      // function evenOrOdd(num) { //for string length take string
+      //   if (num % 2 == 0) {//and replace numm with string.length here
+      //     alert('Even Number');
+      //   } else {
+      //     alert('odd Number');
+      //   }
+      // }
+      for (i = 0; i <= 20; i++) {
+        if (i % 2 == 0) {
+          console.log(i);
+        }
+      }
+      console.log("Hello World");
+      var num = 24;
+      console.log(num);
+      var name = "afia";
+      var age = 24;
+      var designation = "front-end-designer";
+      console.log("i am " + name.toUpperCase());
+      console.log("my age is " + age);
+      console.log("My designation " + designation);
+
+      var age = 70;
+      if (age < 18) {
+        console.log("you are child");
+      } else if (age >= 18 && age <= 30) {
+        console.log("you are Mid-Age");
+      } else if (age >= 31 && age <= 50) {
+        console.log("you are Age");
+      } else if (age >= 51 && age <= 80) {
+        console.log("you are Old");
+      } else if (age >= 81) {
+        console.log("you are Very Old");
+      } else {
+      }
+
+      var address = {
+        village: "rosulbag",
+        upazila: "mohakhali",
+        disrict: "dhaka",
+        division: "dhaka",
+        country: "bangladesh",
+      };
+
+      console.log("My village name is " + address.village);
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 50,
+        eyeColor: "blue",
+      };
+      console.log(person);
+      console.log("hi");
+
+      // grade calculator
+
+      var grade = 3.75;
+      if (grade > 4) {
+        console.log("A");
+      } else if (grade >= 3 && grade < 4) {
+        console.log("B");
+      } else if (grade >= 2 && grade < 3) {
+        console.log("c");
+      } else if (grade >= 1 && grade < 2) {
+        console.log("D");
+      } else if (grade < 1) {
+        console.log("F");
+      }
+
+      var cgpa = 3.75;
+      switch (cgpa) {
+        case 2.75:
+          console.log("B-");
+          break;
+        case 4:
+          console.log("A");
+          break;
+        default:
+          console.log("invalid");
+      }
+
+      var num1 = 15;
+      var num2 =20.5;
+      // num2 = parseFloat(num2);
+      // num1 = num1.toString();
+      var result = Math.ceil(num2);
+      console.log( result);
+      
+      
+     
+        console.log(num1+num2);
+        console.log(typeof(num1));
+        console.log('utt', num1);
+        var promise = "i will do hard"
+        var test = promise.split("do");
+        console.log(test);
+        console.log(promise.toUpperCase());
+        console.log(promise.indexOf("will"));
+        console.log(promise.split("will"));
+
+        var fiName = "justin";
+        var lsName = "biber" ;
+        var fullName = fiName +' ' + lsName ;
+        console.log(fullName);
+        console.log(typeof fiName );
+    </script>
+  </body>
+</html>

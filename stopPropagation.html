@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <h5>
+            hi
+        </h5>
+        <ul id="unorder">
+            <h1>List Item</h1>
+            <li class="item" id="list-1">Today is sunday-1</li>
+            <li class="item">Today is sunday-2</li>
+            <li class="item">Today is sunday-3</li>
+            <li class="item">Today is sunday-4</li>
+            <li class="item">Today is sunday-5</li>
+        </ul>
+        <button id="addNew">Add new </button>
+    </div>
+    <script>
+        var element = document.getElementsByClassName('item')
+        for (var i = 0; i < element.length; i++) {
+            var items = element[i];
+            // console.log(items);
+            items.addEventListener('click', function(event) {
+                event.target.parentNode.removeChild(event.target);
+
+            })
+        }
+        document.getElementById('addNew').addEventListener('click', function() {
+                    var newElement = document.getElementById('unorder');
+                    var addItem = document.createElement('li');
+                    addItem.innerText = "hello mam";
+                    newElement.appendChild(addItem);
+                    // console.log(newElement);
+
+
+                }
+
+            ) // document.getElementById('container').addEventListener('click', function(e) {
+            //     console.log('containerWrap Item');
+            // })
+        document.getElementById('unorder').addEventListener('click', function(e) {
+                // console.log(' unorder Item');
+                e.target.parentNode.removeChild(e.target);
+
+
+            })
+            // document.getElementById('list-1').addEventListener('click', function(e) {
+            //     console.log(' Single item');
+            //     e.stopPropagation();
+
+        // })
+    </script>
+</body>
+
+</html>

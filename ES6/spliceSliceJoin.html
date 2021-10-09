@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-          const nums = [1,2,3,4,5,6,7,8,];
-          const part = nums.slice(2, 5);
-          console.log(`slice`, part);
+      const nums = [1, 2, 3, 4, 5, 6, 7, 8];
+      const part = nums.slice(2, 5);
+      console.log(`slice`, part);
 
-            console.log(`nums`, nums);
+      console.log(`nums`, nums);
 
-            const number = [1,2,3,4,5,6,7,8,];
-          const removed = number.splice(2, 5);
-          console.log(`slice`, removed);
+      const number = [1, 2, 3, 4, 5, 6, 7, 8];
+      const removed = number.splice(2, 5);
+      console.log(`slice`, removed);
 
-            console.log(`number`, number);
+      console.log(`number`, number);
 
-            const numbers = [1,2,3,4,5,6,7,8,];
-          const removed1 = numbers.splice(2, 5,77,88);
-          console.log(`splice`, removed1);
+      const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+      const removed1 = numbers.splice(2, 5, 77, 88);
+      console.log(`splice`, removed1);
 
-            console.log(`numbers`, numbers)
+      console.log(`numbers`, numbers);
 
-            const together = nums.join("ami");
-            console.log(`together`, together)
-
+      const together = nums.join("ami");
+      console.log(`together`, together);
     </script>
-</body>
+  </body>
 </html>

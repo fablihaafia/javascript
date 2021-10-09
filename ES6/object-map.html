@@ -26,21 +26,17 @@
         },
       ];
 
-const info = students.map(student =>student.name)
-   console.log(`name`,info)
+      const info = students.map((student) => student.name);
+      console.log(`name`, info);
 
-   const ids = students.map(student => student.id);
-   console.log(`id=`,ids);
+      const ids = students.map((student) => student.id);
+      console.log(`id=`, ids);
 
-   
-   const bigger = students.filter(student => student.id >1);
-   console.log(`bigger=`,bigger);
+      const bigger = students.filter((student) => student.id > 1);
+      console.log(`bigger=`, bigger);
 
-   const biggerOne = students.find(student => student.id>1);
-   console.log(`biggerOne=`,biggerOne);
-
+      const biggerOne = students.find((student) => student.id > 1);
+      console.log(`biggerOne=`, biggerOne);
     </script>
-
-   
   </body>
 </html>
